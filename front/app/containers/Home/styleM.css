@@ -1,1 +1,37 @@
 /* Home Mobile Styles */
+@media(max-width: 760px) {
+  .filler {
+    height: 20vh;
+  }
+
+  .title {
+    font-size: 3.8em;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  .link {
+    margin-top: 10px;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .skills {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  .skill {
+    width: 90%;
+    align-self: center;
+    margin-top: 20px;
+  }
+
+  .contact-link {
+    width: 40%;
+  }
+}

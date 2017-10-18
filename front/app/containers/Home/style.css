@@ -39,6 +39,7 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .title {
@@ -46,6 +47,7 @@
   color: white;
   font-size: 5em;
   letter-spacing: 15px;
+  text-align: center;
   display:flex;
   justify-content: center;
 }
@@ -94,4 +96,104 @@
   font-size: 2.4em;
   color: white;
   margin: 15px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.content-title {
+  font-family: 'Montserrat';
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content-content {
+  font-family: 'Open+Sans';
+  font-size: 1.6em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  width: 30.66666%
+}
+
+.skill-icon {
+  color: #FED766;
+  font-size: 3.3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.skill-title {
+  font-family: 'Montserrat';
+  font-size: 1.8em;
+  font-weight: 800;
+  text-align: center;
+}
+
+.skill-content {
+  text-align: center;
+  font-size: 1.3em;
+  color: #93a4aa;
+  margin-top: 20px;
+}
+
+.contact {
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Montserrat';
+}
+
+.contact-link {
+  margin-top: 25px;
+  color: black;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 15px;
+  border: solid #FED766;
+  border-radius: 10px;
+  text-decoration: none;
+  width: 10%;
+  align-self: center;
+}
+
+.contact-end {
+  margin-top: 25px;
+  margin-bottom: 100px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 1.8em;
+}
+
+.foot {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.foot-content {
+  text-align: center;
+  font-size: 1.3em;
+  font-family: 'Montserrat';
 }
