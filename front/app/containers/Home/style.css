@@ -1,0 +1,97 @@
+/* Home Styles */
+
+.container {
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.filter {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(5,5,5,0.8);
+}
+
+.head {
+  background-image: url("https://cdn.wallpapersafari.com/40/92/HvIEnr.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.filler {
+  height: 35vh;
+}
+
+.head-content {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Montserrat';
+  color: white;
+  font-size: 5em;
+  letter-spacing: 15px;
+  display:flex;
+  justify-content: center;
+}
+
+.head-text {
+  color: white;
+  font-size: 1.4em;
+  font-family: 'Open+Sans';
+  width: 60%;
+  align-self: center;
+  text-align: center;
+  margin: 50px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  align-self: center;
+  margin: 40px;
+}
+
+.link {
+  color: white;
+  font-size: 1.3em;
+  font-family: 'Open+Sans';
+  padding: 15px 50px 15px 50px;
+  border: solid white;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: white;
+  color: black;
+}
+
+.icons {
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.social {
+  font-size: 2.4em;
+  color: white;
+  margin: 15px;
+}
