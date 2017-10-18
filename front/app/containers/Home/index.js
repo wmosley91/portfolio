@@ -40,6 +40,8 @@ export default class Home extends React.PureComponent {
           <div className='icons'><a href='https://www.facebook.com/profile.php?id=100014534701453' target='_blank'><FaFacebook className='social'/></a><a href='https://www.linkedin.com/in/william-mosley-968a6a151/' target='_blank'><FaLinkedin className='social' /></a><a href='https://github.com/wmosley91' target='_blank'><FaGithub className='social' /></a></div>
         </div>
         <ScrollableAnchor id={'about'}>
+          <div></div>
+        </ScrollableAnchor>
           <div className='content'>
             <div className='content-title'>My skills</div>
             <div className='content-content'>I possess a variety of expertise that aids in the development process</div>
@@ -61,14 +63,14 @@ export default class Home extends React.PureComponent {
               </div>
             </div>
         </div>
-      </ScrollableAnchor>
       <ScrollableAnchor id={'contact'}>
+        <div></div>
+      </ScrollableAnchor>
         <div className='contact'>
           <div className='contact-title'>Still interested?</div>
           <a href='mailto:wmosley91@gmail.com?subject=Website+Ref' className='contact-link'><div>Email me</div></a>
           <div className='contact-end'>let's build something together</div>
         </div>
-      </ScrollableAnchor>
       <div className='foot'>
         <div className='foot-content'>hastily created by me 2017</div>
       </div>
