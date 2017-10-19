@@ -6,8 +6,8 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-import ScrollableAnchor from 'react-scrollable-anchor';
-import { configureAnchors } from 'react-scrollable-anchor';
+import Scroll from 'react-scroll';
+import {scroller} from 'react-scroll';
 import FaFacebook from 'react-icons/lib/fa/facebook';
 import FaLinkedin from 'react-icons/lib/fa/linkedin';
 import FaGithub from 'react-icons/lib/fa/github';
@@ -18,9 +18,9 @@ import FaTerminal from 'react-icons/lib/fa/terminal';
 import './style.css';
 import './styleM.css';
 
+
 export default class Home extends React.PureComponent {
   render() {
-    configureAnchors({scrollDuration: 2000});
     return (
       <div className="container">
         <Helmet title="Home" meta={[ { name: 'description', content: 'Description of Home' }]}/>
@@ -31,7 +31,7 @@ export default class Home extends React.PureComponent {
             <div className='title'>WMosley</div>
             <div className='head-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc neque, vulputate vel congue et, vestibulum sed sem. Nullam accumsan, risus vel volutpat</div>
             <div className='links'>
-              <a href='#about' className='link'><div>About Me</div></a>
+            <a href='#about' className='link'><div>About me</div></a>
               <a href='#contact' className='link'><div>Contact</div></a>
             </div>
           </div>
@@ -39,10 +39,7 @@ export default class Home extends React.PureComponent {
           <div></div>
           <div className='icons'><a href='https://www.facebook.com/profile.php?id=100014534701453' target='_blank'><FaFacebook className='social'/></a><a href='https://www.linkedin.com/in/william-mosley-968a6a151/' target='_blank'><FaLinkedin className='social' /></a><a href='https://github.com/wmosley91' target='_blank'><FaGithub className='social' /></a></div>
         </div>
-        <ScrollableAnchor id={'about'}>
-          <div></div>
-        </ScrollableAnchor>
-          <div className='content'>
+          <div className='content' id='about'>
             <div className='content-title'>My skills</div>
             <div className='content-content'>I possess a variety of expertise that aids in the development process</div>
             <div className='skills'>
@@ -63,10 +60,7 @@ export default class Home extends React.PureComponent {
               </div>
             </div>
         </div>
-      <ScrollableAnchor id={'contact'}>
-        <div></div>
-      </ScrollableAnchor>
-        <div className='contact'>
+        <div className='contact'  id='contact'>
           <div className='contact-title'>Still interested?</div>
           <a href='mailto:wmosley91@gmail.com?subject=Website+Ref' className='contact-link'><div>Email me</div></a>
           <div className='contact-end'>let's build something together</div>
