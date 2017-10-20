@@ -1,9 +1,5 @@
 /* Home Mobile Styles */
-@media(max-width: 760px) {
-  .filler {
-    height: 20vh;
-  }
-
+@media(max-width: 768px) {
   .head-text {
     display: none;
   }
@@ -20,11 +16,6 @@
     margin-top: 30px;
     width: 90%;
     align-self: center;
-  }
-
-  .link:hover {
-    background-color: none;
-    color: white;
   }
 
   .icons {
@@ -52,11 +43,6 @@
   .icons {
     margin-bottom: 10px;
     justify-content: center;
-  }
-
-  .link:hover {
-    background-color: none;
-    color: white;
   }
 
   .logo {
