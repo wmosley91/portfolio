@@ -10,6 +10,15 @@
   margin: 0;
   padding: 0;
 }
+.filler {
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  max-width: 100px;
+  fill: white;
+  z-index: 9;
+}
 
 .filter {
   height: 100vh;
@@ -56,7 +65,7 @@
   color: white;
   font-size: 1.4em;
   font-family: 'Open+Sans';
-  width: 60%;
+  width: 50%;
   align-self: center;
   text-align: center;
   margin: 50px;
@@ -129,7 +138,7 @@
 .skill {
   display: flex;
   flex-direction: column;
-  width: 30.66666%
+  width: 25%
 }
 
 .skill-icon {

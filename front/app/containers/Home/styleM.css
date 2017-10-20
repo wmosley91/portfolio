@@ -4,6 +4,10 @@
     height: 20vh;
   }
 
+  .head-text {
+    display: none;
+  }
+
   .title {
     font-size: 3.8em;
   }
@@ -13,7 +17,9 @@
   }
 
   .link {
-    margin-top: 10px;
+    margin-top: 30px;
+    width: 90%;
+    align-self: center;
   }
 
   .icons {
@@ -33,5 +39,25 @@
 
   .contact-link {
     width: 40%;
+  }
+}
+
+@media(max-height: 750px)
+{
+  .icons {
+    justify-content: center;
+  }
+
+  .logo {
+    max-width: 70px;
+  }
+
+  .title {
+    font-size: 3em;
+    letter-spacing: 10px;
+  }
+
+  .head-text {
+    display: none;
   }
 }

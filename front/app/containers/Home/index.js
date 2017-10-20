@@ -24,10 +24,10 @@ export default class Home extends React.PureComponent {
         <Helmet title="Home" meta={[ { name: 'description', content: 'Description of Home' }]}/>
         <div className='filter'></div>
         <div className='head'>
-          <div className='filler'></div>
+          <div className='filler'> <img src={require('../../images/evqevqev.svg')} className='logo'/></div>
           <div className='head-content'>
-            <div className='title'>WMosley</div>
-            <div className='head-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc neque, vulputate vel congue et, vestibulum sed sem. Nullam accumsan, risus vel volutpat</div>
+            <div className='title'>D.Mosley</div>
+            <div className='head-text'>Work in progress >>>> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc neque, vulputate vel congue et, vestibulum sed sem. Nullam accumsan, risus vel volutpat</div>
             <div className='links'>
             <a href='#about' className='link'><div>About me</div></a>
               <a href='#contact' className='link'><div>Contact</div></a>
@@ -59,7 +59,7 @@ export default class Home extends React.PureComponent {
             </div>
         </div>
         <div className='contact'  id='contact'>
-          <div className='contact-title'>Still interested?</div>
+          <div className='contact-title'>Have an idea for a project?</div>
           <a href='mailto:wmosley91@gmail.com?subject=Website+Ref' className='contact-link'><div>Email me</div></a>
           <div className='contact-end'>let's build something together</div>
         </div>
