@@ -22,6 +22,11 @@
     align-self: center;
   }
 
+  .link:hover {
+    background-color: none;
+    color: white;
+  }
+
   .icons {
     justify-content: center;
   }
@@ -45,7 +50,13 @@
 @media(max-height: 750px)
 {
   .icons {
+    margin-bottom: 10px;
     justify-content: center;
+  }
+
+  .link:hover {
+    background-color: none;
+    color: white;
   }
 
   .logo {
