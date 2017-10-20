@@ -6,8 +6,6 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-import Scroll from 'react-scroll';
-import {scroller} from 'react-scroll';
 import FaFacebook from 'react-icons/lib/fa/facebook';
 import FaLinkedin from 'react-icons/lib/fa/linkedin';
 import FaGithub from 'react-icons/lib/fa/github';
