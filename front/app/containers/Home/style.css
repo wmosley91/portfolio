@@ -87,6 +87,10 @@
   padding: 15px 50px 15px 50px;
   border: solid white;
   text-decoration: none;
+  transition-property: background-color, color;
+  transition-duration: 2s, .2s;
+  transition-delay: 0s, 1s;
+  transition-timing-function: ease-in-out;
 }
 
 .link:hover {
@@ -186,6 +190,65 @@
   text-decoration: none;
   width: 20%;
   align-self: center;
+  transition: background-color 1.5s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.contact-link:hover {
+  background-color: #FED766;
+}
+
+.contact-link:focus {
+  outline: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.form-input {
+  width: 20%;
+  box-sizing: border-box;
+  border: none;
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #93a4aa;
+  font-size: 1.5em;
+  color: #93a4aa;
+  margin-top: 30px;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  width: 20%;
+}
+
+.form-submit {
+  width: 50%;
+  padding: 10px;
+  color: white;
+  border: none;
+  background-color: #5CB85C;
+  cursor: pointer;
+}
+
+.form-cancel {
+  width: 50%;
+  padding: 10px;
+  background-color: #D9534F;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .contact-end {

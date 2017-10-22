@@ -36,6 +36,14 @@
   .contact-link {
     width: 40%;
   }
+
+  .form-input {
+    width: 40%;
+  }
+
+  .form-buttons {
+    width: 40%;
+  }
 }
 
 @media(max-height: 750px)
