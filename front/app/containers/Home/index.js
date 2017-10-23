@@ -15,6 +15,8 @@ import FaTerminal from 'react-icons/lib/fa/terminal';
 import FaCheck from 'react-icons/lib/fa/check';
 import GoX from 'react-icons/lib/go/x';
 import Skill from 'components/Skill';
+import { slideInRight } from 'react-animations';
+import Radium, {StyleRoot} from 'radium';
 
 import './style.css';
 import './styleM.css';
@@ -33,7 +35,15 @@ export default class Home extends React.PureComponent {
     };
   }
 
+
+
   renderForm = () => {
+    const styles = {
+      slideInRight: {
+        animation: 'x 1s',
+        animationName: Radium.keyframes(slideInRight, 'slideInRight')
+      }
+    };
     if(this.state.open == true)
     {
       let submit = 'Submit';
@@ -47,14 +57,16 @@ export default class Home extends React.PureComponent {
         cancel = <GoX/>
       }
       return (
-        <div className='form'>
-          <input type='text' placeholder='NAME' value={this.state.name} onChange={this.handleName} onFocus={this.handleFocus} onBlur={this.handleBlurName} className='form-input'/>
-          <input type='text' placeholder='EMAIL' value={this.state.email} onChange={this.handleEmail} onFocus={this.handleFocus} onBlur={this.handleBlurEmail} className='form-input'/>
-          <div className='form-buttons'>
-            <button className='form-submit' onMouseEnter={this.handleMouseEnterSubmit} onMouseLeave={this.handleMouseLeaveSubmit} value='Submit'>{submit}</button>
-            <button  className='form-cancel' onClick={this.handleForm} onMouseEnter={this.handleMouseEnterCancel} onMouseLeave={this.handleMouseLeaveCancel} value='Cancel'>{cancel}</button>
+        <StyleRoot>
+          <div className='form' style={styles.slideInRight}>
+            <input type='text' placeholder='NAME' value={this.state.name} onChange={this.handleName} onFocus={this.handleFocus} onBlur={this.handleBlurName} className='form-input'/>
+            <input type='text' placeholder='EMAIL' value={this.state.email} onChange={this.handleEmail} onFocus={this.handleFocus} onBlur={this.handleBlurEmail} className='form-input'/>
+            <div className='form-buttons'>
+              <button className='form-submit' onMouseEnter={this.handleMouseEnterSubmit} onMouseLeave={this.handleMouseLeaveSubmit} value='Submit'>{submit}</button>
+              <button  className='form-cancel' onClick={this.handleForm} onMouseEnter={this.handleMouseEnterCancel} onMouseLeave={this.handleMouseLeaveCancel} value='Cancel'>{cancel}</button>
+            </div>
           </div>
-        </div>
+        </StyleRoot>
       );
     }
   }
